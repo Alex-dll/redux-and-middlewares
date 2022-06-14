@@ -1,53 +1,42 @@
-<img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
 
-## Redux Middlewares
-Olá experts, nesta aula aprenderemos um pouco mais sobre a Redux middelwares,
-vamos explorar como eles fucionam e como criar-los do zero, vamos aprender a
-utilizar o middleware para lidar logs, google analytics, Throttle, e muito mais.
-vamos construtir middlewares para lidar com API e normalizar dados.
+  
+# Welcome to example to use Middlewares in Redux
 
-## Primeiros passos 🏁
+- This is a repository, where to demonstrate the use of redux middlewares in a simple way. This project was done during a Rocketseat course in expert club
 
-Clone o repositório.
+## How to run this project
+	
+Clone this repo
+```bash
+  https://github.com/Alex-dll/redux-and-middlewares
+  ```
 
-```sh
-gh repo clone git@github.com:rocketseat-experts-club/redux-principles-2021-08-21 middleware
+Go to project directory
+
+```bash
+  cd redux-and-middlewares
 ```
 
-`cd` no diretório.
+Install the dependencies
 
-```sh
-cd middleware
+```bash
+  yarn | yarn install
 ```
 
-Instale as dependências do projeto:
+Start the aplication
 
-```sh
-yarn install
+```bash
+ yarn start | yarn server
 ```
-
-Inicie o servidor de desenvolvimento:
-
-```sh
-yarn start
-```
-💡 **Dica profissional** a maioria dos aquivos aqui podem ser compilados utilizando tsc diretamente
-caso deseje ter um watch para compilar seu arquivo apenas mude o scrip `yarn dev` no `package.json`
-para apontar para o seu arquivo desejado.
-
-## Ferramentas 🧰
+  
+##  Used Tools 🧰
 - [x] React
 - [x] Redux
 - [x] Redux-toolkit
 - [x] React-GA
 - [x] Tailwind
+----------
 
-## Expert
+Thanks for [Vitor Alencar](https://github.com/vitormalencar) for the amazing content
 
-| [<img src="https://avatars.githubusercontent.com/u/7741167?s=460&u=41e738d1178fcf31656665fe34c1c490d9c271cb&v=4" width="75px;"/>](https://github.com/vitormalencar) |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                          [Vitor Alencar](https://github.com/vitormalencar)                                                          |
-
-## Licença
-
-Projetado com ♥ por [vitormalencar](https://vitormalencar.com). Licenciado sob a [Licença MIT](licença).
+🚀Foguete não tem ré
