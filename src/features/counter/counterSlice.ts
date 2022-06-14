@@ -17,7 +17,7 @@ const initialState: CounterState = {
 // will call the thunk with the `dispatch` function as the first argument. Async
 // code can then be executed and other actions can be dispatched. Thunks are
 // typically used to make async requests.
-export const incrementAsync = createAsyncThunk(
+export const incrementAsync: any = createAsyncThunk(
   'counter/fetchCount',
   async (amount: number) => {
     const response = await fetchCount(amount);
@@ -69,7 +69,7 @@ export const selectCount = (state: RootState) => state.counter.value;
 
 // We can also write thunks by hand, which may contain both sync and async logic.
 // Here's an example of conditionally dispatching actions based on current state.
-export const incrementIfOdd = (amount: number): AppThunk => (
+export const incrementIfOdd: any = (amount: number): AppThunk => (
   dispatch,
   getState
 ) => {

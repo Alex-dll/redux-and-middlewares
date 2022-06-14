@@ -18,21 +18,41 @@ export function Counter() {
 
   const incrementValue = Number(incrementAmount) || 0;
 
+  const incrementWithThrottle = () => ({
+    ...increment(),
+    meta: {
+      throttle: 5000,
+      analytics: {
+        category: 'Counter Increment',
+      },
+    },
+  });
+
+  const decrementWithThrottle = () => ({
+    ...decrement(),
+    meta: {
+      throttle: 5000,
+      analytics: {
+        category: 'Counter Decrement',
+      },
+    },
+  });
+
   return (
     <div>
       <div className={styles.row}>
         <button
           className={styles.button}
-          aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
+          aria-label='Decrement value'
+          onClick={() => dispatch(decrementWithThrottle())}
         >
           -
         </button>
         <span className={styles.value}>{count}</span>
         <button
           className={styles.button}
-          aria-label="Increment value"
-          onClick={() => dispatch(increment())}
+          aria-label='Increment value'
+          onClick={() => dispatch(incrementWithThrottle())}
         >
           +
         </button>
@@ -40,7 +60,7 @@ export function Counter() {
       <div className={styles.row}>
         <input
           className={styles.textbox}
-          aria-label="Set increment amount"
+          aria-label='Set increment amount'
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
         />
